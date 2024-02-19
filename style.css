@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Adjust according to your navbar height */
+}
+  
+.navbar {
+    background-color: #0077b5; /* LinkedIn's blue color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+  
+.navbar .logo {
+    color: white;
+    font-weight: bold;
+}
+  
+.navbar .menu {
+    display: flex;
+    gap: 4%;
+}
+  
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 2vh;
+    display: flex;
+    flex-direction: row;
+    width: 9vw;
+    gap: 3px;
+
+}
+  
+.navbar a:hover {
+    background-color: #005d93; /* Darker blue on hover */
+}
+  
+.logo :hover{
+    cursor: pointer;
+}
+  

@@ -137,5 +137,16 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+.midtxt{
+    animation: textFadeIn 2s ease-in-out forwards;
+}
 
+@keyframes textFadeIn {
+    from {
 
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }

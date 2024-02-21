@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif; /* Adjust according to your navbar height */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f3f3;
 }
   
 .navbar {
@@ -55,7 +56,7 @@ body {
     margin-top: 10vh;
     width: 100%;
     height: 90vh;
-    background-color: #005d93;
+    background-color: #003D60;
 }
 
 .toptxt{
@@ -65,6 +66,7 @@ body {
 }
 
 .midtxt{
+    margin-top: 70px;
     width: 100%;
     height: 25%;
 }
@@ -130,12 +132,13 @@ body {
 }
 .buttons button{
     margin-left: 80%;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.7rem;
+    width: 2.7rem;
     border-radius: 1.5rem;
     border: 1px solid black ;
     font-weight: bold;
     cursor: pointer;
+    background-color: #009EF9;
 }
 .midtxt{
     animation: textFadeIn 2s ease-in-out forwards;
@@ -149,4 +152,145 @@ body {
     to {
       margin-left: 0%;
     }
-  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #0077b5;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0077b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005a8e;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+#jobSearch {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.jobCard {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0077b5;
+    
+}
+
+h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+#jobForm{
+    height: 65vh;
+}
+
+#jobForm, #jobSearch, #jobList {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+#searchInput::placeholder {
+    color: #888;
+}
+
+
+
+input[type="text"]{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="textarea"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+input[type="text"]:focus{
+    outline: none;
+    border: 1px solid #0077b5;
+}
+
+input[type="textarea"]:focus{
+    outline: none;
+    border: 1px solid #0077b5;
+}

@@ -5,7 +5,7 @@ body {
 }
   
 .navbar {
-    background-color: #0077b5; /* LinkedIn's blue color */
+    background-color: #0077b5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,7 @@ body {
 }
   
 .navbar a:hover {
-    background-color: #005d93; /* Darker blue on hover */
+    background-color: #005d93; 
 }
   
 .logo :hover{

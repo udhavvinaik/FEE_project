@@ -45,15 +45,6 @@ function prev(){
 
 
 
-
-
-
-
-
-
-
-
-
 const initialJobs = [
     { title: "Web Developer", description: "Front-end and back-end development", category: "IT" },
     { title: "Graphic Designer", description: "Create visually appealing designs", category: "Design" },
@@ -105,29 +96,4 @@ function publishJob() {
 }
 
 
-
-// Function to search jobs
-function searchJobs() {
-    const searchInput = document.getElementById("searchInput").value.toLowerCase();
-    const filteredJobs = initialJobs.filter(
-        job =>
-            job.title.toLowerCase().includes(searchInput) ||
-            job.description.toLowerCase().includes(searchInput) ||
-            job.category.toLowerCase().includes(searchInput)
-    );
-    displayJobs(filteredJobs);
-}
-
-
-
-// filter jobs by category
-function filterByCategory() {
-    const selectedCategory = document.getElementById("categoryFilter").value.toLowerCase();
-    const filteredJobs = selectedCategory
-        ? initialJobs.filter(job => job.category.toLowerCase() === selectedCategory)
-        : initialJobs;
-    displayJobs(filteredJobs);
-}
-
-// Initial display of jobs
 displayJobs(initialJobs);

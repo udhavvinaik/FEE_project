@@ -45,9 +45,21 @@ function prev(){
 
 
 
+
+
+
+
 const initialJobs = [
     { title: "Web Developer", description: "Front-end and back-end development", category: "IT" },
     { title: "Graphic Designer", description: "Create visually appealing designs", category: "Design" },
+    { title: "Data Scientist", description: "Analyzing and interpreting complex data sets", category: "IT" },
+    { title: "Marketing Specialist", description: "Developing and implementing marketing strategies", category: "Marketing" },
+    { title: "UX/UI Designer", description: "Improving user experience and creating user interfaces", category: "Design" },
+    { title: "Software Engineer", description: "Designing and building software applications", category: "IT" },
+    { title: "Content Writer", description: "Creating engaging and informative content", category: "Content" },
+    { title: "Network Administrator", description: "Managing and maintaining computer networks", category: "IT" },
+    { title: "Financial Analyst", description: "Analyzing financial data and trends", category: "Finance" },
+    { title: "Human Resources Manager", description: "Overseeing HR functions and employee relations", category: "HR" },
 ];
 
 function displayJobs(jobs) {
@@ -67,9 +79,13 @@ function displayJobs(jobs) {
         const category = document.createElement("p");
         category.textContent = `Category: ${job.category}`;
 
+        const applyButton = document.createElement("button");
+        applyButton.textContent = `Apply for the post of ${job.title}`;
+
         jobCard.appendChild(title);
         jobCard.appendChild(description);
         jobCard.appendChild(category);
+        jobCard.appendChild(applyButton);
 
         jobsContainer.appendChild(jobCard);
     }
@@ -83,7 +99,7 @@ function publishJob() {
 
     if (jobTitle && jobDescription && jobCategory) {
         const newJob = { title: jobTitle, description: jobDescription, category: jobCategory };
-        initialJobs.push(newJob);
+        initialJobs.unshift(newJob);
         displayJobs(initialJobs);
 
         // Clear form fields
@@ -96,4 +112,30 @@ function publishJob() {
 }
 
 
+// Function to search jobs
+function searchJobs() {
+    const searchInput = document.getElementById("searchInput").value.toLowerCase();
+    const filteredJobs = initialJobs.filter(
+        job =>
+            job.title.toLowerCase().includes(searchInput) ||
+            job.description.toLowerCase().includes(searchInput) ||
+            job.category.toLowerCase().includes(searchInput)
+    );
+    displayJobs(filteredJobs);
+}
+
+
+
+// filter jobs by category
+function filterByCategory() {
+    const selectedCategory = document.getElementById("categoryFilter").value.toLowerCase();
+    const filteredJobs = selectedCategory
+        ? initialJobs.filter(job => job.category.toLowerCase() === selectedCategory)
+        : initialJobs;
+    displayJobs(filteredJobs);
+}
+
+
+
 displayJobs(initialJobs);
+

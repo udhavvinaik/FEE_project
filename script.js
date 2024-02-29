@@ -29,26 +29,6 @@ function prev(){
     index--;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const initialJobs = [
     { title: "Web Developer", description: "Front-end and back-end development", category: "IT" },
     { title: "Graphic Designer", description: "Create visually appealing designs", category: "Design" },
@@ -139,3 +119,20 @@ function filterByCategory() {
 
 displayJobs(initialJobs);
 
+
+
+
+document.getElementById("openForm").addEventListener("click", function() {
+    document.getElementById("popupContainer").style.display = "block";
+});
+
+document.getElementById("closeForm").addEventListener("click", function() {
+    document.getElementById("popupContainer").style.display = "none";
+});
+
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Add your form submission logic here
+    alert("Form submitted!");
+    document.getElementById("popupContainer").style.display = "none";
+});

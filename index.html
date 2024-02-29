@@ -6,6 +6,7 @@
     <title>Requirtment Management System</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="https://kit.fontawesome.com/95da0ebf49.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Zcq9FSfnr4R6kdLemMldMkH59q3Dh3IwhMeHftTiHy5l3Dk7Z7eFUEjTRW6i5MCqkPUpVCIp1V6j7m2H/6X6sQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -15,14 +16,37 @@
         <p class="txt">Linkedin</p>
         <div class="menu">
           <a href="#hom"><i class="fa-solid fa-house" style="margin-top: 2%;"></i> Home</a>
-          <a href="#"><i class="fa-solid fa-user" style="margin-top: 2%;"></i> Profile</a>
+          <a href="#" id="openForm"><i class="fa-solid fa-user" style="margin-top: 2%;"></i> Profile</a>
           <a href="#publ"><i class="fa-solid fa-cloud-arrow-up" style="margin-top: 2%;"></i> Publish Jobs</a>
           <a href="#find"><i class="fa-solid fa-magnifying-glass" style="margin-top: 2%;"></i> Find Jobs</a>
         </div>
     </div>
 
-
-
+    <div class="popup-container" id="popupContainer">
+      <div class="popup">
+          <span class="close" id="closeForm">&times;</span>
+          <h2>Sign Up</h2>
+          <form id="signupForm">
+              <!-- Your form fields go here -->
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+  
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+  
+              <label for="dob">Date of Birth:</label>
+              <input type="date" id="dob" name="dob" required>
+  
+              <label for="education">Educational Qualifications:</label>
+              <textarea id="education" name="education" rows="3" required></textarea>  
+  
+              <button type="submit">Submit</button>
+          </form>
+      </div>
+  </div>
 
       <div class="home" id="hom">
         
@@ -65,7 +89,7 @@
       </div>
       <div class="pic">
         <h1>Our Motto :</h1>
-        <h3>Our job recruitment website is committed to delivering a robust and tailored solution that ensures your company finds the ideal employees efficiently and effectively. With a user-friendly interface, advanced search functionalities, and real-time job updates, our platform empowers your hiring process. We provide a diverse range of job opportunities, allowing your company to access a broad talent pool spanning various industries and skill sets. Our innovative features, such as skill matching algorithms and customizable filters, guarantee that your job postings reach qualified candidates who align with your company's specific needs. By leveraging our platform, you can save time, reduce costs, and streamline the hiring process, ultimately securing the right talent to drive your company's success. We prioritize transparency, user feedback, and community building, ensuring a positive experience for both employers and job seekers. Trust our recruitment website to be your strategic partner in building a talented and dynamic workforce for your organization.</h3>
+        <h3>Our job recruitment website is committed to delivering a robust and tailored solution that ensures your company finds the ideal employees efficiently and effectively. With a user-friendly interface, advanced search functionalities, and real-time job updates, our platform empowers your hiring process. We provide a diverse range of job opportunities, allowing your company to access a broad talent pool spanning various industries and skill sets. Our innovative features, such as skill matching algorithms and customizable filters, guarantee that your job postings reach qualified candidates who align with your company's specific needs. By leveraging our platform, you can save time, reduce costs, and streamline the hiring process, ultimately securing the right talent to drive your company's success. We prioritize transparency, user feedback, and community building, ensuring a positive experience for both employers and job seekers. Trust our recruitment website to be your strategic partner in building a talented and dynamic workforce for your organization. Our Website will surely work well in finding your dream job.</h3>
       </div>
       <div class="gap" id="publ">
       </div>

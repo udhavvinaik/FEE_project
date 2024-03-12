@@ -236,7 +236,7 @@ p {
 }
 
 #jobForm{
-    height: 65vh;
+    height: 900px;
 }
 
 #jobForm, #jobSearch, #jobList {
@@ -291,10 +291,9 @@ input[type="textarea"]:focus{
     background-size: contain;
 }
 .pic h1{
-    color: #0077b5;
+    color: #003d60;
     margin-left: 40%;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .pic h3{
     margin-top: 1.5%;
@@ -304,7 +303,7 @@ input[type="textarea"]:focus{
     font-weight: lighter;
 }
 
-/* Add this CSS to your existing styles */
+
 
 footer {
     background-color: #333;
@@ -529,3 +528,5 @@ input {
 .l2:hover{
     border: 7px solid #0077b5;
 }
+
+

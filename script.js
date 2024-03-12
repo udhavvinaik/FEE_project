@@ -322,11 +322,10 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
                     document.getElementById("hdd").style.display = "none";
                 }
 
-                // If the user is a recruiter, ask for and store company name locally
+                // If the user is a recruiter
                 if (user.type === "recruiter") {
                     const company = prompt("Please enter your company name:");
                     if (company) {
-                        // Store company name locally (for simplicity, you can use localStorage or more secure methods)
                         companyNameInput.value = company;
                         ccp = companyNameInput.value;
                     }

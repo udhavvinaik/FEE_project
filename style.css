@@ -324,7 +324,7 @@ footer {
 }
 
 .footer-logo img {
-    width: 80px; /* Adjust the size as needed */
+    width: 80px; 
     height: auto;
 }
 
@@ -355,7 +355,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -395,8 +395,8 @@ footer {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 400px; /* Set your desired width */
-    max-width: 90%; /* Ensure it doesn't exceed the screen width */
+    width: 400px;
+    max-width: 90%; 
 }
 
 .close {
